@@ -15,11 +15,7 @@ describe("Testing removeElement", () =>  {
      })
     it("should remove repeated element", () => {
         const array = [1, 2, 3, 4, 2, 5, 6, 7];
-        for (let i = array.length - 1; i >= 0; i--) {
-            if (array[i] === 2) {
-                array.splice(i, 1);
-            }
-        }
+        removeElement(array, 2);
         expect(array).not.toContain(2);
     });
 });
