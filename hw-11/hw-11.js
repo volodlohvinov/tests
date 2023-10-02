@@ -1,4 +1,4 @@
-function pow(num, degree) {
+export function pow(num, degree) {
   if (typeof num !== "number" || Number.isNaN(num)) {
     throw new Error("Entered value not a number!");
   }
@@ -21,4 +21,3 @@ const degree = 3;
 const result = pow(num, degree);
 console.log(result);
 
-module.exports = { pow };
